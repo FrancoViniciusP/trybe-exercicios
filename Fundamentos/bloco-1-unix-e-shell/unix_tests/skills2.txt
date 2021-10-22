@@ -1,0 +1,8 @@
+Internet 
+Unix
+Bash
+SoftSkills
+JS
+React
+Phyton
+HTML
