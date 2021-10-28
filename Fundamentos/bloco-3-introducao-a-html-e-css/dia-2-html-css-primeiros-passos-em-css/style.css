@@ -1,0 +1,23 @@
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+
+  }
+  li{
+    background-color: yellow;
+  }
+  p{
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 100px;
+  }
+  .backColorList{
+    background-color: red;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+  }
+  body{
+    font-size: 16px;
+  }
