@@ -62,3 +62,103 @@
     left: 580px;
     top: 370px;
   }
+  .exercicio3{
+    position: absolute;
+    top: 700px;
+   }
+
+   /* Exercício 3 */
+
+  .exercicio3 li, a {
+    list-style: none;
+    text-decoration: none;
+  }
+  .linkbox{
+    padding: 0.5rem;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    margin: 2px;
+    font-family: serif;
+    text-shadow: 1px 1px black;
+    border-radius: 5px;
+  }
+  .linkbox:hover{
+    opacity: 0.6;
+    transition: 0.2s;
+  }
+  .you{
+    background-color: red;
+    
+  }
+  .google{
+    background-color: blue ;
+    
+  }
+  .wiki{
+    background: grey;
+  }
+  
+  /* Exercício 4 */
+
+  .exercicio4{
+    position: absolute;
+    top: 1100px;
+  }
+
+  .exercicio4 li{
+    background-color: yellow;
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .exercicio4 li em{
+    font-weight: bold;
+  }
+
+  .exercicio4 ol li:nth-child(even){
+    background-color: green;
+  }
+
+  .exercicio4 ol li:nth-child(odd){
+    text-transform: uppercase;
+  }
+
+  .exercicio4 h1, h3{
+    color: red;
+  }
+  .exercicio4 h1 em, h3 em{
+    font-size: 40px;
+    border: 1px solid;
+    border-color: black;
+  }
+
+  .linguagens li:nth-child(-n+3){
+    color: blue;  
+  }
+
+  .exercicio4 a:hover{
+    font-weight: bold;
+  }
+
+  .stack:hover{
+    color: orange;
+  }
+
+  .w3s:hover{
+    color: green;
+  }
+
+  .mdn:hover{
+    color: black;
+  }
+
+  .dev:hover{
+    color: yellow;
+  }
+
+  .trybe:hover{
+    color: green;
+  }
+
+  
