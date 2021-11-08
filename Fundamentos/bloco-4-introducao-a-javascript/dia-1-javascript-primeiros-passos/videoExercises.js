@@ -119,4 +119,3 @@ switch (testResult) {
   default:
     console.log("Não se aplica");
 }
-
