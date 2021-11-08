@@ -1,6 +1,6 @@
 # Exercícios 
 
-## 1. Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas variáveis, a e b, definidas no começo com os valores que serão operados. Faça programas para:
+## 1. Faça cinco programas, um para cada operação aritmética básica. Seu programa deve ter duas variáveis, a e b, definidas no começo com os valores que serão operados. Faça programas para: _[Exercicío 1](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-1-javascript-primeiros-passos/exercise1.js)_
 
 * Adição
 * Subtração
@@ -8,17 +8,17 @@
 * Divisão
 * Módulo
 
-## 2 - Faça um programa que retorne o maior de dois números. Defina no começo do programa duas variáveis com os valores que serão comparados.
+## 2 - Faça um programa que retorne o maior de dois números. Defina no começo do programa duas variáveis com os valores que serão comparados. _[Exercicío 2](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-1-javascript-primeiros-passos/exercise2.js)_
 
-## 3 - Faça um programa que retorne o maior de três números. Defina no começo do programa três variáveis com os valores que serão comparados.
+## 3 - Faça um programa que retorne o maior de três números. Defina no começo do programa três variáveis com os valores que serão comparados. _[Exercicío 3](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-1-javascript-primeiros-passos/exercise3.js)_
 
-## 4 - Faça um programa que, dado um valor definido numa variável, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário.
+## 4 - Faça um programa que, dado um valor definido numa variável, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário. _[Exercicío 4](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-1-javascript-primeiros-passos/exercise4.js)_
 
-## 5 - Faça um programa que defina três variáveis com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false caso contrário.
+## 5 - Faça um programa que defina três variáveis com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false caso contrário. _[Exercicío 5](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-1-javascript-primeiros-passos/exercise5.js)_
 
 * Para os ângulos serem de um triângulo válido, a soma dos três deve ser 180 graus. Caso os ângulos estejam inválidos, o programa deve retornar uma mensagem de erro.
 
-## 6 - Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
+## 6 - Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz. _[Exercicío 6](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-1-javascript-primeiros-passos/exercise6.js)_
 
 * Como desafio, faça o programa funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
 
@@ -28,7 +28,7 @@
 
 * Exemplo: bishop -> diagonals
 
-## 7 - Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
+## 7 - Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras: _[Exercicío 7](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-1-javascript-primeiros-passos/exercise7.js)_
 
 * Porcentagem >= 90 -> A
 * Porcentagem >= 80 -> B
@@ -39,15 +39,15 @@
 
 * O programa deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100. 
 
-## 8 - Escreva um programa que defina três números em variáveis no seu começo e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false.
+## 8 - Escreva um programa que defina três números em variáveis no seu começo e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false. _[Exercicío 8](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-1-javascript-primeiros-passos/exercise8.js)_
 
 * **Bonus**: use somente um if. 
 
-## 9 - Escreva um programa que defina três números em variáveis no seu começo e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false.
+## 9 - Escreva um programa que defina três números em variáveis no seu começo e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false. _[Exercicío 9](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-1-javascript-primeiros-passos/exercise9.js)_
 
 * **Bonus**: use somente um if.
 
-## 10 - Escreva um programa que se inicie com dois valores em duas variáveis diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos.
+## 10 - Escreva um programa que se inicie com dois valores em duas variáveis diferentes: o custo de um produto e seu valor de venda. A partir dos valores, calcule quanto de lucro (valor de venda descontado o custo do produto) a empresa terá ao vender mil desses produtos. _[Exercicío 10](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-1-javascript-primeiros-passos/exercise10.js)_
 
 * Atente que, sobre o custo do produto, incide um imposto de 20%.
 
@@ -59,7 +59,7 @@
 
   * lucro = valorVenda - valorCustoTotal (lucro de um produto)
 
-## 11 - Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
+## 11 - Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido. _[Exercicío 11](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-1-javascript-primeiros-passos/exercise11.js)_
 
 * A notação para um salário de R$1500,10, por exemplo, deve ser 1500.10. Para as faixas de impostos, use as seguintes referências:
 
