@@ -9,11 +9,11 @@
     nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
     };
 
-## 1 - Imprima no console uma mensagem de boas-vindas para a personagem acima, incluindo seu nome. Valor esperado no console: _[Exercicío 1](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-2-javascript-array-e-loop-for/exercise1.js)_
+## 1 - Imprima no console uma mensagem de boas-vindas para a personagem acima, incluindo seu nome. Valor esperado no console: _[Exercicío 1](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-4-javascript-objetos-e-funcoes/exercise1.js)_
 
 Bem-vinda, Margarida
 
-## 2 - Insira no objeto uma nova propriedade com o nome de chave 'recorrente' e o valor 'Sim' e, em seguida, imprima o objeto no console. Valor esperado no console: _[Exercicío 2](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-2-javascript-array-e-loop-for/exercise1.js)_
+## 2 - Insira no objeto uma nova propriedade com o nome de chave 'recorrente' e o valor 'Sim' e, em seguida, imprima o objeto no console. Valor esperado no console: _[Exercicío 2](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-4-javascript-objetos-e-funcoes/exercise2.js)_
 
     {
     personagem: 'Margarida',
@@ -22,21 +22,21 @@ Bem-vinda, Margarida
     recorrente: 'Sim'
     }
 
-## 3 - Faça um for/in que mostre todas as chaves do objeto. Valor esperado no console: _[Exercicío 3](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-2-javascript-array-e-loop-for/exercise1.js)_
+## 3 - Faça um for/in que mostre todas as chaves do objeto. Valor esperado no console: _[Exercicío 3](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-4-javascript-objetos-e-funcoes/exercise3.js)_
 
     personagem
     origem
     nota
     recorrente
 
-## 4 - Faça um novo for/in , mas agora mostre todos os valores das chaves do objeto. Valor esperado no console: _[Exercicío 4](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-2-javascript-array-e-loop-for/exercise1.js)_
+## 4 - Faça um novo for/in , mas agora mostre todos os valores das chaves do objeto. Valor esperado no console: _[Exercicío 4](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-4-javascript-objetos-e-funcoes/exercise4.js)_
 
     Margarida
     Pato Donald
     Namorada do personagem principal nos quadrinhos do Pato Donald
     Sim
 
-## 5 - Agora, defina um segundo objeto com a mesma estrutura (as mesmas chaves) do primeiro e os seguintes valores: 'Tio Patinhas', 'Christmas on Bear Mountain, Dell's Four Color Comics #178', 'O último MacPatinhas', 'Sim'. Então, imprima os valores de cada objeto juntos de acordo com cada uma das chaves. Valor esperado no console: _[Exercicío 5](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-2-javascript-array-e-loop-for/exercise1.js)_
+## 5 - Agora, defina um segundo objeto com a mesma estrutura (as mesmas chaves) do primeiro e os seguintes valores: 'Tio Patinhas', 'Christmas on Bear Mountain, Dell's Four Color Comics #178', 'O último MacPatinhas', 'Sim'. Então, imprima os valores de cada objeto juntos de acordo com cada uma das chaves. Valor esperado no console: _[Exercicío 5](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-4-javascript-objetos-e-funcoes/exercise5.js)_
 
     Margarida e Tio Patinhas
     Pato Donald e Christmas on Bear Mountain, Dell's Four Color Comics #178
@@ -59,9 +59,9 @@ Bem-vinda, Margarida
     ],
     };
 
-## 6 - Acesse as chaves nome , sobrenome e titulo , que está dentro da chave livrosFavoritos , e faça um console.log no seguinte formato: "O livro favorito de Julia Pessoa se chama 'O Pior Dia de Todos'". _[Exercicío 6](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-2-javascript-array-e-loop-for/exercise1.js)_
+## 6 - Acesse as chaves nome , sobrenome e titulo , que está dentro da chave livrosFavoritos , e faça um console.log no seguinte formato: "O livro favorito de Julia Pessoa se chama 'O Pior Dia de Todos'". _[Exercicío 6](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-4-javascript-objetos-e-funcoes/exercise6.js)_
 
-## 7 - Adicione um novo livro favorito na chave livrosFavoritos , que é um array . Atribua a esta chave um objeto contendo as seguintes informações: _[Exercicío 7](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-2-javascript-array-e-loop-for/exercise1.js)_
+## 7 - Adicione um novo livro favorito na chave livrosFavoritos , que é um array . Atribua a esta chave um objeto contendo as seguintes informações: _[Exercicío 7](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-4-javascript-objetos-e-funcoes/exercise7.js)_
 
     {
     titulo: 'Harry Potter e o Prisioneiro de Azkaban',
@@ -69,4 +69,4 @@ Bem-vinda, Margarida
     editor: 'Rocco',
     }
 
-## 8 - Acesse as chaves nome e livrosFavoritos e faça um console.log no seguinte formato: "Julia tem 2 livros favoritos". _[Exercicío 8](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-2-javascript-array-e-loop-for/exercise1.js)_
+## 8 - Acesse as chaves nome e livrosFavoritos e faça um console.log no seguinte formato: "Julia tem 2 livros favoritos". _[Exercicío 8](https://github.com/FrancoViniciusP/trybe-exercicios/blob/main/Fundamentos/bloco-4-introducao-a-javascript/dia-4-javascript-objetos-e-funcoes/exercise8.js)_
