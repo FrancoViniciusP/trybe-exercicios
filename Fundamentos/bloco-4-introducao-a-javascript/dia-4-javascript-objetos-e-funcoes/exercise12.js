@@ -6,3 +6,18 @@
 
 
  */
+
+function biggerName() {
+    let n = 0;
+    let theName = '';
+    for (let i = 0; i < names.length; i += 1){
+        if (names[i].length > n){
+            n = names[i].length;
+            theName = names[i];
+        };
+    }; 
+    return theName;    
+};
+
+names = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+console.log(biggerName(names));
