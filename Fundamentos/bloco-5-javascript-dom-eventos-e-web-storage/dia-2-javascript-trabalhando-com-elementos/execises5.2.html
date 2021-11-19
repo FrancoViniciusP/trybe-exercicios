@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let title = document.createElement('h1');
+      title.innerText = 'Exercício 5.2 - JavaScript DOM';
+      document.body.appendChild(title);
+
+      let principal = document.createElement('main');
+      principal.classList.add('main-content'); // adiciona a classe no nó. Podendo ser uma classe ou mais.
+      document.body.appendChild(principal);
+     
+      let sessao = document.createElement('section');
+      sessao.classList.add('center-content');
+      const tagMain = document.querySelector('.main-content'); // Atribui o pai Main à variavel tagMain para ser usada mais para frente.
+      tagMain.appendChild(sessao); // procura o nó que possui este seletor ('.main-content').
+      //não é possivel inserir um nó filho com um document.main.appendCh..., por exemplo.
+
+      let parag = document.createElement('p');
+      parag.innerText = 'Este é um texto criado para ver como os nós e elementos funcionam diretamente do JavaScript.';
+      document.querySelector('.center-content').appendChild(parag);
+
+      let left = document.createElement('section');
+      left.classList.add('left-content');
+      tagMain.appendChild(left);
+
+      let right = document.createElement('section');
+      right.classList.add('right-content');
+      tagMain.appendChild(right);
+
+      let imagem = document.createElement('img');
+      imagem.src= "https://picsum.photos/200";
+      imagem.classList.add('small-image');
+      document.querySelector('.left-content').appendChild(imagem);
+
+      let ul = document.createElement('ul');
+      ul.classList.add('ulClass');
+      const lista = document.querySelector('.right-content');
+      lista.appendChild(ul);
+
+      function addList(Array) {
+        let li = document.createElement('li');
+        li.innerText = Array;
+        return li;       
+
+      }
+
+      let numArray = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      for (let i = 0; i < numArray.length; i += 1) {
+        let temp = numArray[i]
+        lista.appendChild(addList(temp));
+      }
+
+      
+
+
+
+
+      console.log(document)
+
+    </script>
+  </body>
+</html>
