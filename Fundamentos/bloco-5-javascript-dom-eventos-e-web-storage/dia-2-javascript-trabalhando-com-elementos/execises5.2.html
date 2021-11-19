@@ -57,56 +57,94 @@
   </head>
   <body>
     <script>
+
+      /* 1 */
       let title = document.createElement('h1');
       title.innerText = 'Exercício 5.2 - JavaScript DOM';
       document.body.appendChild(title);
-
+    
+      
+      /* 2 */
       let principal = document.createElement('main');
       principal.classList.add('main-content'); // adiciona a classe no nó. Podendo ser uma classe ou mais.
       document.body.appendChild(principal);
      
+      /* 3 */
       let sessao = document.createElement('section');
       sessao.classList.add('center-content');
       const tagMain = document.querySelector('.main-content'); // Atribui o pai Main à variavel tagMain para ser usada mais para frente.
       tagMain.appendChild(sessao); // procura o nó que possui este seletor ('.main-content').
       //não é possivel inserir um nó filho com um document.main.appendCh..., por exemplo.
 
+      /* 4 */
       let parag = document.createElement('p');
       parag.innerText = 'Este é um texto criado para ver como os nós e elementos funcionam diretamente do JavaScript.';
       document.querySelector('.center-content').appendChild(parag);
 
+      /* 5 */
       let left = document.createElement('section');
       left.classList.add('left-content');
       tagMain.appendChild(left);
 
+      /* 6 */
       let right = document.createElement('section');
       right.classList.add('right-content');
       tagMain.appendChild(right);
 
+      /* 7 */
       let imagem = document.createElement('img');
       imagem.src= "https://picsum.photos/200";
       imagem.classList.add('small-image');
-      document.querySelector('.left-content').appendChild(imagem);
+      let esquerda = document.querySelector('.left-content');
+      esquerda.appendChild(imagem);
 
+      /* 8 */
       let ul = document.createElement('ul');
       ul.classList.add('ulClass');
       const lista = document.querySelector('.right-content');
       lista.appendChild(ul);
+      let listaDeso = document.querySelector('.ulClass');
 
       function addList(Array) {
         let li = document.createElement('li');
         li.innerText = Array;
         return li;       
-
       }
 
       let numArray = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
       for (let i = 0; i < numArray.length; i += 1) {
         let temp = numArray[i]
-        lista.appendChild(addList(temp));
+        listaDeso.appendChild(addList(temp));
       }
 
+      /* 9 */
+      function addH3() {
+        let h3 = document.createElement('h3');
+        /* 11 */ h3.classList.add('description');
+        return h3;
+      }
+      tagMain.append(addH3(),addH3(),addH3());
       
+      
+      /* 10 */
+      title.classList.add('title');
+
+      /* 12 */
+      tagMain.removeChild(esquerda);
+
+      /* 13 */
+      document.querySelector('.right-content').style.marginRight = 'auto';
+
+      /* 14 */
+      sessao.parentElement.style.backgroundColor = 'green';
+
+      
+      /* 15 */
+      listaDeso.removeChild(listaDeso.lastElementChild);
+      listaDeso.removeChild(listaDeso.lastElementChild);
+
+      
+
 
 
 
