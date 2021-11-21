@@ -42,6 +42,7 @@
     background-color: rgb(238,238,238);
     
   }
+
   
   .input-container {
     width: 49%;
@@ -92,6 +93,10 @@
     margin-left: 10px;
     vertical-align: middle;
     width: 35px;
+  }
+
+  div .selected {
+    border: 3px solid black;
   }
   
   .my-tasks div:hover {

@@ -132,8 +132,27 @@ function taskColor(color) {
   div.classList.add('task');
   div.style.backgroundColor = color;
   const classeTask = document.querySelector('.my-tasks');
-  classeTask.appendChild(div);
-  
+  classeTask.appendChild(div);  
 }
 taskColor('blue');
+
+function exercise9() {
+    const taskSeletor = document.querySelectorAll('.task');
+  for(let i = 0; i < taskSeletor.length; i += 1){
+    taskSeletor[i].addEventListener('click', selectTask);
+  }
+
+  function selectTask() { 
+    for (let i = 0; i < taskSeletor.length; i+=1){
+    if (taskSeletor[i].className == 'task'){
+      taskSeletor[i].classList.add('selected');
+    } else{
+      taskSeletor[i].classList.remove('selected');
+
+    }
+    }  
+  }
+}
+
+exercise9();
 
