@@ -64,3 +64,14 @@ function changeHolidayColor() {
 
 const buttonHoliday = document.querySelector('#btn-holiday');
 buttonHoliday.addEventListener('click', changeHolidayColor)
+
+function buttonFriday() {
+  const buttonName = 'Sexta-feira';
+  const botaofriday = document.createElement('button');
+  botaofriday.innerText = buttonName;
+  botaofriday.setAttribute('id','btn-friday');
+  const classeBotao = document.querySelector('.buttons-container');
+  classeBotao.appendChild(botaofriday);
+}
+
+  buttonFriday();
