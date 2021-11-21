@@ -36,6 +36,11 @@
     vertical-align: middle;
     width: 13.6%;
   }
+
+  #days .holiday {
+    color: red;
+    
+  }
   
   .input-container {
     width: 49%;

@@ -12,5 +12,23 @@ function createDaysOfTheWeek() {
   };
   
   createDaysOfTheWeek();
-  
-  // Escreva seu código abaixo.
+
+function createDaysOfTheMonth() {
+    const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+    for (let i = 0; i < dezDaysList.length; i += 1){
+      const dayNumbers = dezDaysList[i];
+      const ul = document.querySelector('#days');
+      const listDayNumbers = document.createElement('li');
+      listDayNumbers.innerHTML = dayNumbers;
+      listDayNumbers.classList.add('day');
+      ul.appendChild(listDayNumbers);
+      if (dayNumbers == 24 || dayNumbers == 25 || dayNumbers == 31 ) {
+        listDayNumbers.classList.add('holiday');
+      }
+      if (dayNumbers == 4 || dayNumbers == 11 || dayNumbers == 18 || dayNumbers == 25){
+        listDayNumbers.classList.add('friday');
+      }
+    }    
+}
+
+  createDaysOfTheMonth();
