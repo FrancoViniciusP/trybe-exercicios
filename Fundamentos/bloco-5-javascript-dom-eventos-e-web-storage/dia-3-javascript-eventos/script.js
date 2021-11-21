@@ -136,23 +136,46 @@ function taskColor(color) {
 }
 taskColor('blue');
 
-function exercise9() {
+
+
+function exercise9() {    
+    const selecteds = document.getElementsByClassName('task selected');
     const taskSeletor = document.querySelectorAll('.task');
-  for(let i = 0; i < taskSeletor.length; i += 1){
-    taskSeletor[i].addEventListener('click', selectTask);
-  }
-
-  function selectTask() { 
-    for (let i = 0; i < taskSeletor.length; i+=1){
-    if (taskSeletor[i].className == 'task'){
-      taskSeletor[i].classList.add('selected');
+for (let i = 0; i < taskSeletor.length; i+=1) {
+  taskSeletor[i].addEventListener('click', function(event) { 
+      if (selecteds.length === 0) { 
+      event.target.className = 'task selected';
     } else{
-      taskSeletor[i].classList.remove('selected');
-
+      event.target.className = 'task';
     }
-    }  
-  }
+  });  
+}
+   
 }
 
 exercise9();
+
+
+function setDayColor() {
+  let selectedTask = document.getElementsByClassName('task selected');
+  console.log(selectedTask);
+  let days = document.querySelector('#days');
+  let taskDiv = document.querySelector('.task');
+
+  let taskColor = taskDiv.style.backgroundColor;
+  console.log(taskColor);
+  
+  days.addEventListener('click', function(event){
+    console.log(event);
+    let eventTargetColor = event.target.style.color;
+    if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+      let color = selectedTask[0].style.backgroundColor;
+      event.target.style.color = color;
+    } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  });
+};
+
+setDayColor(); 
 
