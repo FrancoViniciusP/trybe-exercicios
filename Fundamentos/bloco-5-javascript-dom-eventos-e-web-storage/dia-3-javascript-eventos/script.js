@@ -115,15 +115,25 @@ function exercicise6(){
 exercicise6();
 
 
-function task(newtask){
+function task(newtask) {
   let span = document.createElement('span');
-  span.style.display = "block";
+  // span.style.display = "block";
   span.innerText = newtask;
-  let classeTask = document.querySelector('.my-tasks');
+  const classeTask = document.querySelector('.my-tasks');
   classeTask.appendChild(span);
-
 }
+
 task('Cozinhar');
-task('Estudar');
-task('Limpar a casa');
+// task('Estudar');
+// task('Limpar a casa');
+
+function taskColor(color) {
+  let div = document.createElement('div');
+  div.classList.add('task');
+  div.style.backgroundColor = color;
+  const classeTask = document.querySelector('.my-tasks');
+  classeTask.appendChild(div);
   
+}
+taskColor('blue');
+
