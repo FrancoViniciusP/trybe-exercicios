@@ -96,3 +96,18 @@ function changeFridayText() {
 
 const buttonfriday = document.querySelector('#btn-friday');
 buttonfriday.addEventListener('click', changeFridayText);
+
+function zoomIn(dayListItem) {
+ dayListItem.target.style.fontSize = 'xx-large';
+}
+function zoomOut(dayListItem) {
+  dayListItem.target.style.fontSize = 'large';
+ }
+
+const zoomNumber = document.querySelectorAll('.day');
+for (let i = 0; i < zoomNumber.length; i += 1){
+  zoomNumber[i].addEventListener('mouseover', zoomIn);
+  zoomNumber[i].addEventListener('mouseout', zoomOut);
+}
+
+  
