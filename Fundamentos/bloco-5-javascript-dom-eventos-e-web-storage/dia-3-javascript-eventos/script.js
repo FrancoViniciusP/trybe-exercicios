@@ -75,3 +75,24 @@ function buttonFriday() {
 }
 
   buttonFriday();
+
+
+function changeFridayText() {
+  const temp = document.querySelectorAll('.friday');
+  const actualText = temp[0].style.fontWeight;
+  switch (actualText) {
+    case '' : 
+      for (let i in temp){    
+        temp[i].style.fontWeight = 'bolder'; 
+      } 
+    break;
+    case 'bolder':
+      for (let i in temp){    
+        temp[i].style.fontWeight = ''; 
+      } 
+    break;
+  } 
+}
+
+const buttonfriday = document.querySelector('#btn-friday');
+buttonfriday.addEventListener('click', changeFridayText);
