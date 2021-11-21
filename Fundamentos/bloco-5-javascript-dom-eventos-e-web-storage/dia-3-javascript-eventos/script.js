@@ -97,17 +97,33 @@ function changeFridayText() {
 const buttonfriday = document.querySelector('#btn-friday');
 buttonfriday.addEventListener('click', changeFridayText);
 
-function zoomIn(dayListItem) {
- dayListItem.target.style.fontSize = 'xx-large';
+function exercicise6(){
+  function zoomIn(dayListItem) {
+    dayListItem.target.style.fontSize = 'xx-large';
+   }
+   function zoomOut(dayListItem) {
+     dayListItem.target.style.fontSize = '20px';
+    }
+   
+   const zoomNumber = document.querySelectorAll('.day');
+   for (let i = 0; i < zoomNumber.length; i += 1){
+     zoomNumber[i].addEventListener('mouseover', zoomIn);
+     zoomNumber[i].addEventListener('mouseout', zoomOut);
+   }
 }
-function zoomOut(dayListItem) {
-  dayListItem.target.style.fontSize = 'large';
- }
 
-const zoomNumber = document.querySelectorAll('.day');
-for (let i = 0; i < zoomNumber.length; i += 1){
-  zoomNumber[i].addEventListener('mouseover', zoomIn);
-  zoomNumber[i].addEventListener('mouseout', zoomOut);
+exercicise6();
+
+
+function task(newtask){
+  let span = document.createElement('span');
+  span.style.display = "block";
+  span.innerText = newtask;
+  let classeTask = document.querySelector('.my-tasks');
+  classeTask.appendChild(span);
+
 }
-
+task('Cozinhar');
+task('Estudar');
+task('Limpar a casa');
   
