@@ -43,3 +43,24 @@ function buttonFeriado() {
 }
 
   buttonFeriado();
+
+
+function changeHolidayColor() {
+  const temp = document.querySelectorAll('.holiday');
+  const actualColor = temp[0].style.backgroundColor;
+  switch (actualColor) {
+    case '' : 
+      for (let i in temp){    
+        temp[i].style.backgroundColor = 'yellow'; 
+      } 
+    break;
+    case 'yellow':
+      for (let i in temp){    
+        temp[i].style.backgroundColor = ''; 
+      } 
+    break;
+  } 
+}
+
+const buttonHoliday = document.querySelector('#btn-holiday');
+buttonHoliday.addEventListener('click', changeHolidayColor)
