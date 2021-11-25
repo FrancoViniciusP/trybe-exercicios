@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+</head>
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <label for="name"> Nome
+                <input type="text" name="name" maxlength="40" required> 
+            </label>
+            <br>
+            <label for="email"> Email
+                <input type="email" name="email" maxlength="50" required> 
+            </label>
+            <br>
+            <label for="cpf"> CPF
+                <input type="text" name="cpf" maxlength="11" required> 
+            </label>
+            <br>
+            <label for="adress"> Endereço
+                <input type="text" name="adress" maxlength="200" required> 
+            </label>
+            <br>
+            <label for="city"> Cidade
+                <input type="text" name="city" maxlength="28" required> 
+            </label>
+            <br>
+            <label for="state"> Estado
+                <select name="state" id="input-state" required>
+                    <option value="ES">Espirito Santo</option>
+
+                </select> 
+            </label>
+            <label for="home"> Tipo
+                <input type="radio" name="casa" id="home" required>Casa
+            </label> 
+            <label for="apt">
+               <input type="radio" name="casa" id="apt" required>Apartamento 
+            </label>    
+        </fieldset>
+        <fieldset>
+            <label for="resumo">Resumo do Currículo
+                <br>
+                <textarea name="resumo" id="resumo" maxlength="1000" cols="30" rows="10" required></textarea>
+            </label>
+            <br>
+            <label for="cargo">Cargo
+                <br>
+                <textarea name="cargo" id="cargo" maxlength="30" cols="30" rows="1" required></textarea>
+            </label>
+            <br>
+            <label for="descricao">Descrição do Cargo
+                <br>
+                <textarea name="descricao" id="descricao" maxlength="500" cols="30" rows="5" required></textarea>
+            </label>
+            <label for="date">Data de Início
+                <br>
+                <input type="date" required>
+            </label>
+        </fieldset>
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
