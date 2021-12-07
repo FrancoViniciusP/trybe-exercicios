@@ -1,3 +1,5 @@
+/* ------- PART 1 ------ */
+
 const order = {
     name: 'Rafael Andrade',
     phoneNumber: '11-98763-1416',
