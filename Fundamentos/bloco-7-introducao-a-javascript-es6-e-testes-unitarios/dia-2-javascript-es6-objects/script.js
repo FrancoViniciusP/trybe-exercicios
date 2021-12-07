@@ -127,15 +127,35 @@ const lesson1 = {
 
   verifyPair(lesson3, 'materia' , 'noite');
 
+/* -------- BONUS -------- */
 
   const mathStudants = () => {
-      let total = 0;
-      for(let i in allLessons) {
-          if (allLessons[i].materia === 'Matemática') {
-              total += allLessons[i].numeroEstudantes;
-          }
-      }
-      return total;
+    let total = 0;
+    for(let i in allLessons) {
+        if (allLessons[i].materia === 'Matemática') {
+            total += allLessons[i].numeroEstudantes;
+        }
+    }
+    return total;
   }
 
   console.log(mathStudants());
+
+  const createReport = (obj, teacher) => {
+    let total = 0;
+    let report = {
+        professor: teacher,
+        aulas: [],
+        estudantes: [],
+    };
+    for(let i in obj) {
+        if (obj[i].professor === teacher) {
+            report.aulas.push(obj[i].materia);
+            total += obj[i].numeroEstudantes;
+            report.estudantes = total;
+        }
+    }
+    return report;
+  } 
+
+  console.log(createReport(allLessons, 'Maria Clara'))
