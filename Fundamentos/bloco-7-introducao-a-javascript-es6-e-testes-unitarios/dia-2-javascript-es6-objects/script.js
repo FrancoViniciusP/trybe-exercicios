@@ -36,12 +36,12 @@ const order = {
   
   const customerInfo = (order ) => {
       // Adicione abaixo as informações necessárias.
-      let ordering = Object.values(order.order.delivery.deliveryPerson).join('');
-      let person = Object.values(order.name).join('');
-      let phone = Object.values(order.phoneNumber).join('');
-      let street = Object.values(order.address.street).join('');
-      let number = Object.values(order.address.number).join('');
-      let apartment = Object.values(order.address.apartment).join('');
+      let ordering = order.order.delivery.deliveryPerson;
+      let person = order.name;
+      let phone = order.phoneNumber;
+      let street = order.address.street;
+      let number = order.address.number;
+      let apartment = order.address.apartment;
       console.log(`Olá ${ordering}, entrega para: ${person}, Telefone: ${phone}, R. ${street}, Nº ${number}, AP: ${apartment}`);       
   }
   
@@ -51,15 +51,91 @@ const order = {
     // Adicione abaixo as informações necessárias.
     order.name = 'Luiz Silva'
     order.payment.total = 'R$ 50,00'
-    let name = Object.values(order.name).join('');
+    let name = order.name;
     let pizza = Object.keys(order.order.pizza).join(', ');
-    let drink = Object.values(order.order.drinks.coke.type).join('');
-    let price = Object.values(order.payment.total).join('');
-    console.log(`Olá ${name}, o total do seu pedido de ${pizza} e ${drink} é ${price}.`)
-
-    
-
-  
+    let drink = order.order.drinks.coke.type;
+    let price = order.payment.total;
+    console.log(`Olá ${name}, o total do seu pedido de ${pizza} e ${drink} é ${price}.`)  
   }
   
   orderModifier(order);
+
+/* ------ PART 2 -------- */
+
+const lesson1 = {
+    materia: 'Matemática',
+    numeroEstudantes: 20,
+    professor: 'Maria Clara',
+    turno: 'manhã',
+  };
+  
+  const lesson2 = {
+    materia: 'História',
+    numeroEstudantes: 20,
+    professor: 'Carlos',
+  };
+  
+  const lesson3 = {
+    materia: 'Matemática',
+    numeroEstudantes: 10,
+    professor: 'Maria Clara',
+    turno: 'noite',
+  };
+
+  const addTurno = (lesson2) => {lesson2['turno'] = 'noite';}
+
+  addTurno(lesson2);
+
+  const keyList = (obj) => {console.log(Object.keys(obj));}
+
+  keyList(lesson1);
+
+  const objLength = (obj) => {console.log(Object.keys(obj).length);}
+
+  objLength(lesson2);
+
+  const valueList = (obj) => {console.log(Object.values(obj));}
+
+  valueList(lesson3);
+
+ 
+  const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
+  console.log(allLessons);
+  
+
+  const studants = () => {
+    let total = 0;
+    for (let i in allLessons) {
+        total += allLessons[i].numeroEstudantes;
+    }
+    console.log(total);      
+  }
+
+  studants();
+
+  const getValueByNumber = (obj, number) => {
+    console.log(Object.values(obj)[number]);
+  }
+
+  getValueByNumber(lesson1, 0);
+// Output: 'Matématica'
+
+
+  const verifyPair = (obj, chave, value) => {
+      (obj[chave] === value) ?  console.log(true) : console.log(false);
+  } 
+
+  verifyPair(lesson3, 'materia' , 'noite');
+
+
+  const mathStudants = () => {
+      let total = 0;
+      for(let i in allLessons) {
+          if (allLessons[i].materia === 'Matemática') {
+              total += allLessons[i].numeroEstudantes;
+          }
+      }
+      return total;
+  }
+
+  console.log(mathStudants());
