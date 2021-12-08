@@ -1,4 +1,4 @@
-const myRemove = require('./myRemove')
+const myRemove = require('./myRemove');
 
 describe('the myRemove function(arr, item)', () => {
 
