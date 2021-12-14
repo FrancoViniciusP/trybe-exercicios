@@ -66,15 +66,16 @@ const books = [
 //   2 - Retorne o nome do livro de menor nome.
 // Dica: use a função forEach .
 
-function smallerName(item) {
-  let nameBook = item.name;
-  for (let i = 0; i < books.length; i += 1) {
-    if (item[i].name.length < nameBook.length) {
-     nameBook = item[i].name;
-    }
+function smallerName() {
+  let nameBook;
+
+  books.forEach((item) => {
+    if (!nameBook || item.name.length < nameBook.length) {
+      nameBook = item.name;
+    }    
+  });
+    return nameBook;
   }
   // Variável nameBook que receberá o valor do menor nome;
-  return nameBook;
-}
 
-console.log(books.forEach(smallerName));
+console.log(smallerName());
