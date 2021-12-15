@@ -60,8 +60,6 @@ const books = [
       releaseYear: 1928,
     },
   ];
-  
-  // Adicione o código do exercício aqui:
 
 // 3 - Encontre o primeiro livro cujo nome possui 26 caracteres.
 
@@ -77,5 +75,11 @@ const expectedResult = {
 };
 
 function getNamedBook() {
-  // escreva seu código aqui
+
+ const book =  books.find((books) => books.name.length === 26);
+
+  return book.name;
+
 }
+
+console.log(getNamedBook());
