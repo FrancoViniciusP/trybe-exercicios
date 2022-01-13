@@ -24,6 +24,9 @@ const addClick = () => {
     urls.forEach((url) => { 
         url.addEventListener('click', () => {
             console.log('deu certo');
+            fetch(url.innerText)
+              .then((response) => (response.json()))
+              .then((data) => console.log(data));
         });
      });   
 };
