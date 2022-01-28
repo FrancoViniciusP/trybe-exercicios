@@ -1,8 +1,14 @@
 import React from 'react';
-import Component from './Component';
+
+const myTasks = ['Ir ao shopping', 'Estudar', 'Comprar pó de café', 'Entregar Projeto', 'Tocar violão']
+const Task = (value) => {
+  return (
+    <li>{value}</li>
+  );
+}
 
 function App() {
-  return <Component />;
+  return ( <ul>{ myTasks.map( task => Task(task)) } </ul> );
 }
 
 export default App;
