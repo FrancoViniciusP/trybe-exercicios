@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+div {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pokemon {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  text-align: center;
+  transition: 0.3s;
+  width: 200px;
+  border-radius: 5px;
+  padding: 2px 16px;
+  display: inline-block;
+  margin: 5px;
+}
+
+.pokemon:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
+}
