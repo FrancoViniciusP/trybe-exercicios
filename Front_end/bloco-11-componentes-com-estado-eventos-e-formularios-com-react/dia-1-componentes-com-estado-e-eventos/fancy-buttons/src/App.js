@@ -3,16 +3,6 @@ import React, { Component } from 'react'
 import './App.css';
 
 
-
-function handleClick2() {
-  console.log("clicou no botão 2");
-}
-
-function handleClick3() {
-  console.log("clicou no botão 3");
-}
-
-
 class App extends Component {
 
   constructor() {
