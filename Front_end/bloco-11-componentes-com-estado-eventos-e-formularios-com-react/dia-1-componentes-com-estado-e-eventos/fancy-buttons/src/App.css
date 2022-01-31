@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  margin: 100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  font-size: xxx-large;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.3)
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: rgb(28, 126, 172);
+}
+
+.green {
+  background-color: green;
+}
