@@ -19,30 +19,30 @@ class App extends Component {
 
   handleClick1() {
     console.log("clicou no botão 1");
-    this.setState(({ numeroDeCliques1 }, _props) => 
-      ({numeroDeCliques1: numeroDeCliques1 + 1})
+    this.setState(({ numeroDeCliques1 }, _props) =>
+      ({ numeroDeCliques1: numeroDeCliques1 + 1 })
     );
-    console.log(this.state.numeroDeCliques1); 
+    console.log(this.state.numeroDeCliques1);
   }
- 
+
   // o valor é impresso no console antes da atualização do state, devido a assincronissidade da função setState.
-  
+
   handleClick2() {
     console.log("clicou no botão 2");
-    this.setState(({ numeroDeCliques2 }, _props) => 
-      ({numeroDeCliques2: numeroDeCliques2 + 1})
+    this.setState(({ numeroDeCliques2 }, _props) =>
+      ({ numeroDeCliques2: numeroDeCliques2 + 1 })
     );
     console.log(this.state.numeroDeCliques2);
   }
-  
+
   handleClick3() {
     console.log("clicou no botão 3");
-    this.setState(({ numeroDeCliques3 }, _props) => 
-      ({numeroDeCliques3: numeroDeCliques3 + 1})
+    this.setState(({ numeroDeCliques3 }, _props) =>
+      ({ numeroDeCliques3: numeroDeCliques3 + 1 })
     );
     console.log(this.state.numeroDeCliques3);
   }
-  
+
   render() {
     return (
       <div className="App">
