@@ -83,33 +83,33 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 10: Introdução à React
 
-- [x] 11-1: _'Hello, world!' no React!_
-- [x] 11-2: _Componentes React_
-- [x] 11-3: _[Projeto - Solar System]()_
+- [x] 10-1: _'Hello, world!' no React!_
+- [x] 10-2: _Componentes React_
+- [x] 10-3: _[Projeto - Solar System]()_
 
-##### Bloco 12: React
+##### Bloco 11: Componentes com Estado, Eventos e Formulários com React
 
-- [x] 12-1: _Components com estado_
-- [x] 12-2: _Eventos e formulários no React_
-- [x] 12-3: _[Projeto - Tryunfo]()_
+- [x] 11-1: _Components com estado_
+- [x] 11-2: _Eventos e formulários no React_
+- [x] 11-3: _[Projeto - Tryunfo]()_
 
-##### Bloco 13: React
+##### Bloco 12: Ciclo de vida de componentes e React Router
 
-- [x] 13-1: _Melhorando o reuso de componentes: props.children e PropTypes_
-- [x] 13-2: _Ciclo de vida de componentes em React_
-- [x] 13-3: _React Router_
-- [ ] 13-4: _[Projeto - TrybeTunes]()_
+- [x] 12-1: _Ciclo de vida de componentes em React_
+- [x] 12-2: _React Router_
+- [ ] 12-3: _[Projeto - TrybeTunes]()_
 
-##### Bloco 14: Metodologias Ágeis
+##### Bloco 13: Metodologias Ágeis
 
 - [x] 14-1: _Metodologias Ágeis_
 - [ ] 14-2: _[Projeto - Frontend Online Store]()_
 
-##### Bloco 15: Testes em React
+##### Bloco 14: Testes automatizados com React Testing Library
 
-- [ ] 15-1: _Testando React com a React Testing Library_
-- [ ] 15-2: _Testando React com a React Testing Library - Parte 2_
-- [ ] 15-3: _[Projeto - Testes em React]()_
+- [x] 14-1: _RTL - Primeiros Passos_
+- [x] 14-2: _Mocks e Inputs_
+- [ ] 14-3: _Testando React Router_
+- [ ] 14-4: _[Projeto - Testes em React]()_
 
 ##### Bloco 16: Introdução ao Redux
 
