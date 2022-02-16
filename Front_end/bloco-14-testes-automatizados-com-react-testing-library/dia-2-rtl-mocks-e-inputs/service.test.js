@@ -34,3 +34,19 @@ test('Criar dois mocks no mesmo teste "multiplicar 3 números" e "retornar o dob
     expect(service.randomNumber(2)).toBe(4); 
 
 })
+
+test('Alterar as funções e realizar testes', () => {
+    service.turnToUpper.mockImplementation((word) => word.toLowerCase());
+    service.theLastLetter.mockImplementation((word) => word.slice(word.length-1));
+    service.joinWords.mockImplementation((a, b, c) => `${a} ${b} ${c}`);
+
+    expect(service.turnToUpper('VINICIUS')).toBe('vinicius');
+    expect(service.turnToUpper('VinIcIUs')).toBe('vinicius');
+
+    expect(service.theLastLetter('Vinicius')).toBe('s')
+    expect(service.theLastLetter('coffee')).toBe('e')
+
+    expect(service.joinWords('how', 'are', 'you?')).toBe('how are you?')
+
+    
+})
