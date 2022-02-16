@@ -24,3 +24,13 @@ test('Se a função recebe dois numeros e retorna a divisão do primeior pelo se
     expect(service.randomNumber).toHaveBeenCalledTimes(2);
 
 })
+
+test('Criar dois mocks no mesmo teste "multiplicar 3 números" e "retornar o dobro de um número"', () => {
+    service.randomNumber
+    .mockImplementationOnce((a, b, c) => a * b * c) // Redefine a função apenas uma vez quando é chamada.
+    .mockImplementationOnce((a) => a * 2); // Quando a função for chamada pela segunda vez executará esse mock.
+
+    expect(service.randomNumber(2, 3, 1)).toBe(6);
+    expect(service.randomNumber(2)).toBe(4); 
+
+})
