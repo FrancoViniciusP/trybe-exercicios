@@ -34,3 +34,15 @@ GROUP BY `DEPARTMENT_ID`;
 SELECT
   REPLACE(PHONE_NUMBER, '515', '777')
 FROM hr.employees;
+
+-- 14. 🚀 Escreva uma query que exiba as seguintes informações de cada funcionário: id , primeiro nome e dia do mês no qual foi contratado (exiba somente o dia).
+SELECT EMPLOYEE_ID,
+  FIRST_NAME,
+  DAY(HIRE_DATE) AS `Dia de contratação`
+FROM hr.employees;
+
+-- 18: 🚀 Escreva uma query que exiba as seguintes informações de cada funcionário: nome , sobrenome , tempo que trabalha na empresa (em dias).
+SELECT FIRST_NAME,
+  LAST_NAME,
+  DATEDIFF(CURRENT_DATE, HIRE_DATE) AS `Tempo de trabalho(dias)`
+FROM hr.employees;
