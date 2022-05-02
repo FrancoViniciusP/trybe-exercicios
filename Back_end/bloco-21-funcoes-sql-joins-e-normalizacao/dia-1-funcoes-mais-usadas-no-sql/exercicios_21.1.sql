@@ -19,3 +19,18 @@ SELECT
  ROUND(SUM(SALARY), 2) AS `Soma dos Salários`,
  ROUND(AVG(SALARY), 2) AS `Média dos Salários`
 FROM hr.employees;
+
+-- 10. 🚀 Escreva um query que exiba média salarial e o número de funcionários de todos os departamentos com mais de dez funcionários. Dica: agrupe pelo DEPARTMENT_ID .
+
+SELECT 
+  DEPARTMENT_ID,
+  COUNT(FIRST_NAME) AS `nº de empregados do setor`,  
+  AVG(SALARY) 
+FROM hr.employees
+GROUP BY `DEPARTMENT_ID`;
+
+-- 11. 🚀 Escreva uma query que atualize a coluna PHONE_NUMBER , de modo que todos os telefones iniciados por 515 agora devem iniciar com 777.
+
+SELECT
+  REPLACE(PHONE_NUMBER, '515', '777')
+FROM hr.employees;
