@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "read": "node readFileSync.js"
+    "readSync": "node readFileSync.js",
+    "readAsync": "node readFile.js",
+    "writeFile": "node writeFile.js"
   },
   "author": "Vinicius Pacheco",
   "license": "ISC"

@@ -1,5 +1,1 @@
-Teste de método Sincrono e Assincrono
-
-Dia 2.
-Módulo 22.
-Trybe.
+Meu textão
