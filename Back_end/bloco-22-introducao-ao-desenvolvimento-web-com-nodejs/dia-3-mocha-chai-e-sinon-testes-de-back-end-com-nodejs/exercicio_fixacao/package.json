@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node idex.js",
+    "start": "node index.js",
     "test": "mocha tests"
   },
   "author": "Vinicius Pacheco",
