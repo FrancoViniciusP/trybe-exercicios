@@ -152,25 +152,38 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 20-4: _Manipulando tabelas_
 - [x] 20-5: _[Projeto - All For One]()_
 
-##### Bloco 22: Bancos de dados relacionais
+##### Bloco 21: Funções SQL, JOINs e Normalização
 
-- [x] 22-1: _Transformando ideias em um modelo de banco de dados_
-- [x] 22-2: _Normalização, Formas Normais e Dumps_
-- [x] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
-- [x] 22-3: _[Projeto - One For All]()_
+- [x] 21-1: _Funções mais usadas no SQL_
+- [x] 21-2: _Descomplicando JOINs_
+- [x] 21-3: _Transformando ideias em um modelo de banco de dados_
+- [x] 21-4: _[Projeto - One For All]()_
 
-##### Bloco 23: Introdução - NoSQL
+##### Bloco 22: Introdução ao desenvolvimento Web com Node.js
 
-- [ ] 23-1: _MongoDB - Introdução_
-- [ ] 23-2: _Filter Operators_
-- [ ] 23-3: _[Projeto - Data Flights]()_
+- [x] 22-1: _Node.js - Um motor JavaScript_
+- [x] 22-2: _Node.js - Fluxo Assíncrono_
+- [x] 22-3: _Mocha, Chai e Sinon - Testes de Back-end com Node.js_
+- [x] 22-4: _Express - HTTP com Node.js_
+- [x] 22-5: _Express - Middlewares_
+- [x] 22-6: _[Talker Manager]()_
 
-##### Bloco 24: Updates
+##### Bloco 23: Node.js: Camada de Serviço e Arquitetura Rest e Restful
 
-- [ ] 24-1: _Updates Simples_
-- [ ] 24-2: _Updates Complexos - Arrays - Parte 1_
-- [ ] 24-3: _Updates Complexos - Arrays - Parte 2_
-- [ ] 24-4: _[Projeto - Commerce]()_
+- [x] 23-1: _Arquitetura de Software - Camada de Model_
+- [x] 23-2: _Arquitetura de Software - Camada de Controller e Service_
+- [x] 23-3: _Arquitetura Web - Rest e Restful_
+- [x] 23-4: _Arquitetura de Software - Testando as camadas_
+- [x] 23-5: _[Store Manager]()_
+
+
+##### Bloco 24: Node.js: ORM e Autenticação
+
+- [x] 24-1: _ORM - Interface da aplicação com o banco de dados_
+- [x] 24-2: _ORM - Associations_
+- [x] 24-3: _JWT - (JSON Web Token)_
+- [x] 24-4: _Testando APIs com Testes de Integração_
+- [ ] 24-5: _[API de Blogs]()_
 
 ##### Bloco 25: Aggregation Framework
 
